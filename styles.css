@@ -1,0 +1,157 @@
+body {
+
+    background-color: rgb(36, 40, 56);
+    color: rgb(220, 220, 220);
+}
+
+.titulo {
+    background-color: rgb(77, 85, 142);
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    position: relative;
+    width: 100%;
+    margin: auto;
+    padding: 1em;
+    z-index: 10;
+    margin-bottom: 40px;
+}
+
+.titulo .contenido {
+    max-width: 90%;
+    margin: auto;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.base {
+    background-color: rgb(77, 85, 142);
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    position: relative;
+    margin-bottom: 40px;
+    padding: 1em
+}
+
+.tituloConte {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+.tablaCon {
+    width: 90%;
+    margin: auto;
+    border-collapse: collapse;
+    margin-bottom: 40px;
+}
+
+.tablaCon th,
+.tablaCon td {
+    border: 1px solid rgb(220, 220, 220);
+    padding: 8px;
+    text-align: center;
+}
+
+.tablaCon img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+.articulos {
+    background-color: rgb(172, 162, 208);
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    position: relative;
+    margin-bottom: 40px;
+    padding: 1em;
+}
+
+.articulos .contenedor {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+
+}
+
+.columna1 {
+    text-align: justify;
+    background-color: rgb(77, 85, 142);
+}
+
+.columna2 {
+    text-align: justify;
+    background-color: rgb(36, 40, 56);
+    ;
+}
+
+.columna3 {
+    text-align: justify;
+    background-color: rgb(77, 85, 142);
+}
+
+.botton {
+    display: inline-block;
+    padding: 12px 24px;
+    background: linear-gradient(to bottom right, rgb(77, 85, 142), rgb(172, 162, 208));
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 100px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2), ;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.botton:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 10px rgba(160, 160, 160, 0.514);
+}
+
+.boton-centro {
+    text-align: center;
+}
+
+.articulos1 {
+    background-color: rgb(77, 85, 142);
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    position: relative;
+    margin-bottom: 40px;
+    padding: 1em;
+}
+
+.articulos1 .contenedor {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+
+}
+
+.columna4 {
+    text-align: justify;
+    background-color: rgb(36, 40, 56);
+}
+
+.columna5 {
+    text-align: justify;
+    background-color: rgb(172, 162, 208);
+    ;
+}
+
+.columna6 {
+    text-align: justify;
+    background-color: rgb(36, 40, 56);
+}
