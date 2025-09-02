@@ -1,11 +1,31 @@
 body {
-
-    background-color: rgb(36, 40, 56);
+    background-color: rgb(52, 53, 18);
     color: rgb(220, 220, 220);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.botonCam {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: white;
+    background-color: rgba(108, 92, 52, 0.7);
+    border: none;
+    border-radius: 50%;
+    padding: 8px;
+    font-size: 20px;
+    z-index: 999;
+    transition: background-color 0.3s ease;
+}
+
+.botonCam:hover {
+    background-color: rgba(193, 200, 156, 0.8);
+    color: rgb(52, 53, 18);
 }
 
 .titulo {
-    background-color: rgb(77, 85, 142);
+    background-color: rgb(108, 92, 52);
+    color: rgb(193, 200, 156);
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
     border-bottom-left-radius: 50%;
@@ -16,6 +36,7 @@ body {
     padding: 1em;
     z-index: 10;
     margin-bottom: 40px;
+    transition: background-color 0.3s ease;
 }
 
 .titulo .contenido {
@@ -26,20 +47,19 @@ body {
 }
 
 .base {
-    background-color: rgb(77, 85, 142);
+    background-color: rgb(193, 200, 156);
+    color: rgb(52, 53, 18);
     width: 100%;
     margin: auto;
     text-align: center;
     position: relative;
     margin-bottom: 40px;
-    padding: 1em
+    padding: 1em;
+    transition: background-color 0.3s ease;
 }
 
-.tituloConte {
-    margin-bottom: 20px;
-    text-align: center;
-}
 
+/* ================== TABLAS ================== */
 
 .tablaCon {
     width: 90%;
@@ -50,9 +70,15 @@ body {
 
 .tablaCon th,
 .tablaCon td {
-    border: 1px solid rgb(220, 220, 220);
+    border: 1px solid rgb(193, 200, 156);
     padding: 8px;
     text-align: center;
+    color: rgb(220, 220, 220);
+}
+
+.tablaCon th {
+    background-color: rgb(108, 92, 52);
+    color: rgb(193, 200, 156);
 }
 
 .tablaCon img {
@@ -62,14 +88,18 @@ body {
     margin: auto;
 }
 
+
+/* ================== ARTÍCULOS ================== */
+
 .articulos {
-    background-color: rgb(172, 162, 208);
+    background-color: rgb(108, 92, 52);
     width: 100%;
     margin: auto;
     text-align: center;
     position: relative;
     margin-bottom: 40px;
     padding: 1em;
+    transition: background-color 0.3s ease;
 }
 
 .articulos .contenedor {
@@ -79,55 +109,57 @@ body {
     max-width: 1200px;
     margin: auto;
     padding: 20px;
-
 }
 
-.columna1 {
-    text-align: justify;
-    background-color: rgb(77, 85, 142);
-}
-
-.columna2 {
-    text-align: justify;
-    background-color: rgb(36, 40, 56);
-    ;
-}
-
+.columna1,
 .columna3 {
-    text-align: justify;
-    background-color: rgb(77, 85, 142);
+    background-color: rgb(193, 200, 156);
+    color: rgb(52, 53, 18);
+    border-radius: 12px;
+    padding: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.columna2,
+.columna4,
+.columna6 {
+    background-color: rgb(52, 53, 18);
+    color: rgb(220, 220, 220);
+    border-radius: 12px;
+    padding: 20px;
+    transition: background-color 0.3s ease;
 }
 
 .botton {
     display: inline-block;
     padding: 12px 24px;
-    background: linear-gradient(to bottom right, rgb(77, 85, 142), rgb(172, 162, 208));
-    color: white;
+    background: linear-gradient(to bottom right, rgb(108, 92, 52), rgb(193, 200, 156));
+    color: rgb(52, 53, 18);
+    font-weight: bold;
     font-family: 'Times New Roman', Times, serif;
     font-size: 16px;
     text-decoration: none;
     border-radius: 100px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2), ;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .botton:hover {
     transform: translateY(-2px);
-    box-shadow: 0 6px 10px rgba(160, 160, 160, 0.514);
-}
-
-.boton-centro {
-    text-align: center;
+    box-shadow: 0 6px 10px rgba(193, 200, 156, 0.5);
+    background: linear-gradient(to bottom right, rgb(193, 200, 156), rgb(108, 92, 52));
 }
 
 .articulos1 {
-    background-color: rgb(77, 85, 142);
+    background-color: rgb(193, 200, 156);
+    color: rgb(52, 53, 18);
     width: 100%;
     margin: auto;
     text-align: center;
     position: relative;
     margin-bottom: 40px;
     padding: 1em;
+    transition: background-color 0.3s ease;
 }
 
 .articulos1 .contenedor {
@@ -137,21 +169,15 @@ body {
     max-width: 1200px;
     margin: auto;
     padding: 20px;
-
 }
 
-.columna4 {
-    text-align: justify;
-    background-color: rgb(36, 40, 56);
+.columna4,
+.columna6 {
+    background-color: rgb(52, 53, 18);
+    color: rgb(220, 220, 220);
 }
 
 .columna5 {
-    text-align: justify;
-    background-color: rgb(172, 162, 208);
-    ;
-}
-
-.columna6 {
-    text-align: justify;
-    background-color: rgb(36, 40, 56);
+    background-color: rgb(108, 92, 52);
+    color: rgb(52, 53, 18)
 }
