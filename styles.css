@@ -2,6 +2,7 @@ body {
     background-color: rgb(52, 53, 18);
     color: rgb(220, 220, 220);
     transition: background-color 0.3s ease, color 0.3s ease;
+    margin: 0;
 }
 
 .botonCam {
@@ -32,7 +33,7 @@ body {
     border-bottom-right-radius: 50%;
     position: relative;
     width: 100%;
-    margin: auto;
+    margin: 0;
     padding: 1em;
     z-index: 10;
     margin-bottom: 40px;
@@ -41,7 +42,7 @@ body {
 
 .titulo .contenido {
     max-width: 90%;
-    margin: auto;
+    margin: 0 auto;
     word-wrap: break-word;
     overflow-wrap: break-word;
 }
@@ -58,38 +59,43 @@ body {
     transition: background-color 0.3s ease;
 }
 
-
-/* ================== TABLAS ================== */
-
 .tablaCon {
-    width: 90%;
-    margin: auto;
-    border-collapse: collapse;
-    margin-bottom: 40px;
-}
+            width: 90%;
+            margin: auto;
+            border-collapse: collapse;
+            margin-bottom: 40px;
+            border: 2px solid rgb(108, 92, 52); 
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
 
-.tablaCon th,
-.tablaCon td {
-    border: 1px solid rgb(193, 200, 156);
-    padding: 8px;
-    text-align: center;
-    color: rgb(220, 220, 220);
-}
+        .tablaCon th,
+        .tablaCon td {
+            border: 1px solid rgb(193, 200, 156);
+            padding: 8px;
+            text-align: center;
+            color: rgb(220, 220, 220);
+        }
 
-.tablaCon th {
-    background-color: rgb(108, 92, 52);
-    color: rgb(193, 200, 156);
-}
+        .tablaCon th {
+            background-color: rgb(108, 92, 52);
+            color: rgb(193, 200, 156);
+        }
 
-.tablaCon img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: auto;
-}
+        .tablaCon tr:nth-child(even) {
+            background-color: rgb(108, 92, 52);
+        }
 
+        .tablaCon tr:nth-child(odd) {
+            background-color: rgb(52, 53, 18); 
+        }
 
-/* ================== ARTÍCULOS ================== */
+        .tablaCon img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: auto;
+        }
+
 
 .articulos {
     background-color: rgb(108, 92, 52);
