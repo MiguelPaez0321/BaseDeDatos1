@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
+
     const boton = document.getElementById("cambiarFondo");
     const icono = document.getElementById("icono");
     const body = document.body;
