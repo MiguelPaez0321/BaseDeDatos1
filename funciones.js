@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
 
     const boton = document.getElementById("cambiarFondo");
     const icono = document.getElementById("icono");
@@ -30,3 +30,10 @@ document.addEventListener("DOMContentLoaded", function() {
 
     boton.addEventListener("click", alternarModo);
 });
+
+function descargarPDF() {
+    const link = document.createElement('a');
+    link.href = 'documentos/BasePDF.pdf';
+    link.download = 'BasePDF.pdf';
+    link.click();
+}
